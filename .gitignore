@@ -1,0 +1,416 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+/.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# TESTING
+# ============================================
+/coverage
+*.lcov
+.nyc_output
+
+# ============================================
+# PRODUCTION / BUILD
+# ============================================
+/build
+/dist
+/.next
+/out
+*.tsbuildinfo
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ============================================
+# IDE / EDITOR
+# ============================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA / WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+
+# ============================================
+# REACT / FRONTEND SPECIFIC
+# ============================================
+# Create React App
+.eslintcache
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Gatsby
+.cache/
+public/
+
+# Nuxt.js
+.nuxt
+dist
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ============================================
+# BACKEND SPECIFIC
+# ============================================
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.mo
+*.pot
+instance/
+.webassets-cache
+.scrapy
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================
+# DATABASES
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+*.dump
+
+# PostgreSQL
+*.psql
+
+# MongoDB
+*.mongo
+
+# ============================================
+# DOCKER
+# ============================================
+docker-compose.override.yml
+.dockerignore
+
+# ============================================
+# CLOUD & DEPLOYMENT
+# ============================================
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# AWS
+.aws/
+.elasticbeanstalk/
+
+# Heroku
+.heroku/
+
+# Google Cloud
+.gcloud/
+
+# ============================================
+# MOBILE (React Native)
+# ============================================
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+local.properties
+.idea/
+*.iml
+*.hprof
+.cxx/
+*.jks
+*.keystore
+*.p12
+.externalNativeBuild
+.cxx
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+Pods/
+ios/Pods/
+
+# Expo
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Metro
+.metro-health-check*
+
+# ============================================
+# MACHINE LEARNING / CV MODEL
+# ============================================
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyTorch
+*.pth
+*.pt
+
+# TensorFlow
+*.pb
+*.h5
+*.hdf5
+saved_model/
+checkpoint/
+model/
+models/
+*.ckpt
+events.out.tfevents.*
+
+# Training data
+dataset/
+data/
+*.csv
+*.json
+*.npy
+*.npz
+
+# Weights
+weights/
+*.weights
+*.pkl
+*.pickle
+
+# ============================================
+# MISC
+# ============================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Certificates & Keys (NEVER COMMIT THESE!)
+*.pem
+*.key
+*.cert
+*.crt
+*.pub
+secrets/
+credentials/
+
+# Service account files
+*-service-account.json
+serviceAccountKey.json
+
+# API Keys
+api-keys/
+.api-keys
+
+# Local config
+config.local.js
+config.local.json
+
+# Cache
+.cache/
+*.cache
+.parcel-cache/
+
+# Temporary folders
+tmp/
+temp/
+.temp/
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+# Uploaded images (if storing locally)
+uploads/
+user-uploads/
+
+# Generated thumbnails
+thumbnails/
+
+# Chess position images (dataset)
+positions/
+board-images/
+
+# Analysis results cache
+analysis-cache/
+
+# User data backups
+backups/
+
+# Local testing files
+test-data/
+sample-data/
